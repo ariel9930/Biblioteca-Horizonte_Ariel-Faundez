@@ -2,13 +2,222 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.imagen img{
-    height: 115px;
-    width: 115px;
+
+body {
+    font-family: arial;
+    flex-wrap: wrap;
+    
 }
-.libros_seleccionados img{
-    height: 60px;
+/*navbar*/
+.navbar {
+    background-color: rgb(247, 247, 247);
+    border: 4px rgb(222, 222, 222) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+}
+.azul {
+    color: rgb(36, 93, 163);
+}
+.nav_logo {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.nav_logo img {
+    width: 70px;
+    height: 70px;
+}
+.nav_descripcion{
+    display:flex;
+    flex-direction: column;
+}
+.nav_barrita {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.nav_minibarrita {
+    display: flex;
+    height:40px;
+    gap:5px;
+}
+.nav_minibarrita button {
+    background-color: rgb(40, 94, 165);
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius:5px;
+}
+
+.nav_libros {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.nav_libros img{
+    width:40px;
+    height:40px;
+}
+.nav_libros_texto{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+.nav_libros_texto h1{
+    font-size:18px;
+}
+
+.nav_libros_texto p{
+    font-size:18px;
+    padding-top:20px;
+}
+/*navbar*/
+/*container*/
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.categorias {
+    background-color: rgb(209, 220, 232);
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.Categoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 25px;
+    width:140px;
+    margin-bottom:5px;
+    flex-wrap: wrap;
+    background-color:rgb(252, 252, 252);
+}
+.Categoria img {
     width: 60px;
+    height: 48px;
+    margin-top:20px;
 }
+.sectionn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:20px;
+    padding:20px;
+    flex-wrap: wrap;
+}
+/*container*/
+
+
+/*ANUNCIO*/
+.anuncio{
+    width:725px;
+    height:405px;
+    background-color:rgb(197, 197, 197);
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align:center;
+    padding:10px;
+    gap:10px;
+}
+.anuncio img{
+    width:440px;
+    height:340px;
+}
+.anuncio_texto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width:255px;
+    font-size:32px;
+    font-weight: lighter;
+    gap:20px;
+    text-align: start;
+}
+.raya_azul{
+    border:3px solid rgb(39, 94, 160);
+    width:80px;
+}
+/*ANUNCIO*/
+
+
+/*recomendaciones*/
+.libros_recomendaciones{
+    width:400px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+}
+.recomendaciones{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    border:1px solid gray;
+    height:125px;
+}
+.recomendaciones img{
+    width:100px;
+    height:130px;
+    padding:20px;
+}
+.descripcionn{
+    color:rgb(66, 66, 66);
+    font-size:16px;
+}
+.recomendacion_info{
+    display:flex;
+    flex-direction: column;
+    max-width:350px;
+    width:350px;
+    padding:25px;
+    position: relative;
+    gap:15px;
+
+}
+.recomendacion_info a{
+    max-width:80px;
+}
+.desc{
+    color:rgb(66, 66, 66);
+    font-size:16px;
+}
+.pedir{
+    position:absolute;
+    top:75px;
+    left:210px;
+}
+.pedir button{
+        background-color:rgb(24, 55, 84);
+    color:white;
+    border:none;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.negrita{
+    font-weight:bold;
+}
+/*recomendaciones*/

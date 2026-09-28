@@ -4,34 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Ariel Faundez">
+    <title>Biblioteca Horizonte</title>
+    <meta name="author" content="Ariel Faundez">
     <link rel="stylesheet" href="static/css/style.css">
-    <title>Biblioteca</title>
 </head>
+
 <body>
-<header class="nav">
-    <nav class="navbar">
-        <div class="imagen">
-            <img src="static/img/libro-removebg-preview.png" alt="libro">
-            <h1>Biblioteca<br><span class="horizonte">Horizonte</span></h1>
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <img src="static/img/libro.png" alt="Logo">
+                <div class="nav_descripcion">
+                    <h1>Biblioteca</h1>
+                    <h1 class="azul">Horizonte</h1>
+                </div>
+            </div>
+            <div class="nav_barrita">
+                <div class="nav_minibarrita">
+                    <input id="input" type="email" name="email" placeholder="Email">
+                    <button id="boton" type="submit">Ingresar</button>
+                </div>
+                <div class="nav_libros">
+                    <img src="static/img/minilibros.png" alt="Logo-Libros">
+                    <div class="nav_libros_texto">
+                        <h1>Libros <br>seleccionados:</h1>
+                        <p id="carro">0</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="categorias">
+            <div class="Categoria">
+                <img src="static/img/storyteller-open-book-icon-outline-style-vector.jpg" alt="Novelas">
+                <p>Novelas</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/img/png-transparent-beaker-computer-icons-laboratory-flask-miscellaneous-angle-laboratory.png" alt="Ciencia">
+                <p>Ciencia</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/img/historia.png" alt="Historia">
+                <p>Historia</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/img/istockphoto-1283444740-612x612.jpg" alt="Tecnologia">
+                <p>Tecnología</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/Arte.png" alt="Arte">
+                <p>Arte</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/Infantil.png" alt="Infantil">
+                <p>Infantil</p>
+            </div>
         </div>
-        <div class="input">
-            <input id="Email" type="text" placeholder="Email">
-            <button class="ingresar">Ingresar</button>
+        <div class="sectionn">
+            <div class="anuncio">
+                <div class="anuncio_texto">
+                    <p class="negrita">Descubre nuevas historias</p>
+                    <div class="raya_azul"></div>
+                    <p class="descripcionn">Explora nuestra biblioteca virtual y encuentra libros para todos los gustos.
+                        Conocimiento, aventura y mucho más al alcance de un clic.</p>
+                </div>
+                <div class="anuncio_imagen">
+                    <img id="imagen" src="static/images/Biblioteca.png" id="Biblioteca" alt="Biblioteca">
+                </div>
+            </div>
+            <div class="libros_recomendaciones">
+                <h1>Libros recomendados:</h1>
+                <div class="recomendaciones">
+                    <img src="static/images/Libro1.png" alt="Libro1">
+                    <div class="recomendacion_info">
+                        <p>Cien años de soledad</p>
+                        <p class="desc">Gabriel García Márquez</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="pedir">
+                            <button id="carro">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recomendaciones">
+                    <img src="static/images/Libro2.png" alt="Libro2">
+                    <div class="recomendacion_info">
+                        <p>Sapiens</p>
+                        <p class="desc">Yuval Noah Harari</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="pedir">
+                            <button id="carro1">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recomendaciones">
+                    <img src="static/images/Libro3.png" alt="Libro3">
+                    <div class="recomendacion_info">
+                        <p>El principito</p>
+                        <p class="desc">Antoine de Saint-Exupéry</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="pedir">
+                            <button id="carro2">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="libros_seleccionados">
-            <img src="static/img/libross-removebg-preview.png" alt="libros">
-            <p>libros seleccionados: <span id="numero">0</span></p>
-        </div>
-    </nav>
-</header>
-<main class="container">
-<section class="Novelas">
+    </main>
+    <footer>
 
-</section>
-
-
-</main>
+    </footer>
 
     <script src="static/js/script.js"></script>
 </body>

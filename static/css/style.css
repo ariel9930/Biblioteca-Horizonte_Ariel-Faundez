@@ -84,6 +84,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%; /* Asegura que la pantalla o el área de trabajo se use completamente */
 }
 .categorias {
     background-color: rgb(209, 220, 232);
@@ -114,10 +115,12 @@ body {
 }
 .sectionn {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Alinea los bloques en la parte superior */
+    justify-content: space-between; /* Distribuye espacio para alinearse con los bordes de .categorias */
     flex-direction: row;
     gap:20px;
-    padding:20px;
+    padding:20px 0; /* Ajusta el padding vertical manteniendo alineación */
+    width: 85%; /* Mismo ancho del 85% que tiene .categorias */
     flex-wrap: wrap;
 }
 /*container*/
@@ -125,34 +128,48 @@ body {
 
 /*ANUNCIO*/
 .anuncio{
-    width:725px;
-    height:405px;
-    background-color:rgb(197, 197, 197);
-    display:flex;
+    flex: 1; /* Permite que el bloque de anuncio tome el espacio disponible */
+    min-width: 450px;
+    height: 405px;
+    background-color: rgb(197, 197, 197);
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Mantiene el texto a la izquierda y el video a la derecha */
     flex-direction: row;
-    text-align:center;
-    padding:10px;
-    gap:10px;
+    padding: 20px;
+    gap: 15px;
 }
-.anuncio video{
-    width:440px;
-    height:340px;
-}
+
 .anuncio_texto{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-width:255px;
-    font-size:32px;
+    max-width: 250px;
+    font-size: 32px;
     font-weight: lighter;
-    gap:20px;
+    gap: 20px;
     text-align: start;
 }
+
+/* Contenedor del video centrado */
+.anuncio_video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video más grande */
+.anuncio video{
+    width: 100%;
+    max-width: 500px; /* Aumentado para que se vea más grande */
+    height: 360px;    /* Aumentado proporcionalmente */
+    object-fit: cover; /* Mantiene buena proporción de aspecto */
+    border-radius: 4px;
+}
+
 .raya_azul{
-    border:3px solid rgb(39, 94, 160);
-    width:80px;
+    border: 3px solid rgb(39, 94, 160);
+    width: 80px;
 }
 /*ANUNCIO*/
 
@@ -160,11 +177,10 @@ body {
 /*recomendaciones*/
 .libros_recomendaciones{
     width:400px;
-    height:400px;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding:20px;
+    padding:0 0 20px 0;
 }
 .recomendaciones{
     display:flex;
@@ -206,7 +222,7 @@ body {
     left:210px;
 }
 .pedir button{
-        background-color:rgb(24, 55, 84);
+    background-color:rgb(24, 55, 84);
     color:white;
     border:none;
     border-radius:50%;

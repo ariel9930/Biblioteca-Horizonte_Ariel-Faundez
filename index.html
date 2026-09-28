@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Horizonte</title>
     <meta name="author" content="Ariel Faundez">
+    <!-- Archivo de estilos CSS -->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
+    <!-- Encabezado y barra de navegación -->
     <header>
         <nav class="navbar">
+            <!-- Logo principal de la página -->
             <div class="nav_logo">
                 <img src="static/img/libro.png" alt="Logo">
                 <div class="nav_descripcion">
@@ -19,22 +22,28 @@
                     <h1 class="azul">Horizonte</h1>
                 </div>
             </div>
+            
             <div class="nav_barrita">
+                <!-- Formulario de ingreso/login -->
                 <div class="nav_minibarrita">
                     <input id="input" type="email" name="email" placeholder="Email">
                     <button id="boton" type="submit">Ingresar</button>
                 </div>
+                <!-- Contador de libros seleccionados -->
                 <div class="nav_libros">
                     <img src="static/img/minilibros.png" alt="Logo-Libros">
                     <div class="nav_libros_texto">
-                        <h1>Libros <br>seleccionados:</h1>
-                        <p id="carro">0</p>
+                        <h1>Libros<br> seleccionados:</h1>
+                        <p id="carro"> 0</p>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Contenido principal -->
     <main class="container">
+        <!-- Sección de categorías de libros -->
         <div class="categorias">
             <div class="Categoria">
                 <img src="static/img/storyteller-open-book-icon-outline-style-vector.jpg" alt="Novelas">
@@ -61,7 +70,9 @@
                 <p>Infantil</p>
             </div>
         </div>
+
         <div class="sectionn">
+            <!-- Banner promocional con video interactivo -->
             <div class="anuncio">
                 <div class="anuncio_texto">
                     <p class="negrita">Descubre nuevas historias</p>
@@ -70,15 +81,18 @@
                         Conocimiento, aventura y mucho más al alcance de un clic.</p>
                 </div>
                 <div class="anuncio_video">
-                    <video src="static\video\videoplayback.mp4" autoplay muted loop  class="videou" id="videou"></video>
+                    <video src="static\video\videoplayback.mp4" autoplay muted loop class="videou" id="videou"></video>
                 </div>
             </div>
+
+            <!-- Listado de libros recomendados -->
             <div class="libros_recomendaciones">
                 <h1>Libros recomendados:</h1>
+                
                 <div class="recomendaciones">
                     <img src="static/img/libro1.jpg" alt="Libro1">
                     <div class="recomendacion_info">
-                        <p>Cien años de soledad</p>
+                        <p class="negrita">Cien años de soledad</p>
                         <p class="desc">Gabriel García Márquez</p>
                         <a href="#">Ver mas...</a>
                         <div class="pedir">
@@ -86,10 +100,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="recomendaciones">
                     <img src="static/img/sapiens.jpg" alt="Libro2">
                     <div class="recomendacion_info">
-                        <p>Sapiens</p>
+                        <p class="negrita">Sapiens</p>
                         <p class="desc">Yuval Noah Harari</p>
                         <a href="#">Ver mas...</a>
                         <div class="pedir">
@@ -97,10 +112,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="recomendaciones">
                     <img src="static/img/principito.jpg" alt="Libro3">
                     <div class="recomendacion_info">
-                        <p>El principito</p>
+                        <p class="negrita">El principito</p>
                         <p class="desc">Antoine de Saint-Exupéry</p>
                         <a href="#">Ver mas...</a>
                         <div class="pedir">
@@ -111,10 +127,12 @@
             </div>
         </div>
     </main>
+
     <footer>
 
     </footer>
 
+    <!-- Archivo de scripts JavaScript -->
     <script src="static/js/script.js"></script>
 </body>
 

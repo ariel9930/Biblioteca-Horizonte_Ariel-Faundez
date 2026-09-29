@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,8 +7,9 @@
 body {
     font-family: arial;
     flex-wrap: wrap;
-    
+
 }
+
 /*navbar*/
 .navbar {
     background-color: rgb(255, 255, 255);
@@ -19,23 +20,28 @@ body {
     height: 100px;
     flex-wrap: wrap;
 }
+
 .azul {
     color: rgb(36, 93, 163);
 }
+
 .nav_logo {
     display: flex;
     padding: 10px;
     align-items: center;
     gap: 5px;
 }
+
 .nav_logo img {
     width: 70px;
     height: 70px;
 }
-.nav_descripcion{
-    display:flex;
+
+.nav_descripcion {
+    display: flex;
     flex-direction: column;
 }
+
 .nav_barrita {
     display: flex;
     gap: 50px;
@@ -44,15 +50,16 @@ body {
 
 .nav_minibarrita {
     display: flex;
-    height:40px;
-    gap:5px;
+    height: 40px;
+    gap: 5px;
 }
+
 .nav_minibarrita button {
     background-color: rgb(40, 94, 165);
     border: none;
     color: white;
     width: 100px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .nav_libros {
@@ -60,23 +67,27 @@ body {
     gap: 5px;
     align-items: center;
 }
-.nav_libros img{
-    width:40px;
-    height:40px;
-}
-.nav_libros_texto{
-    display:flex;
-    flex-direction: row;
-    align-items:center;
-}
-.nav_libros_texto h1{
-    font-size:18px;
+
+.nav_libros img {
+    width: 40px;
+    height: 40px;
 }
 
-.nav_libros_texto p{
-    font-size:18px;
-    padding-top:20px;
+.nav_libros_texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.nav_libros_texto h1 {
+    font-size: 18px;
+}
+
+.nav_libros_texto p {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
 /*navbar*/
 /*container*/
 .container {
@@ -84,63 +95,72 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%; /* Asegura que la pantalla o el área de trabajo se use completamente */
+    width: 100%;
 }
+
 .categorias {
     background-color: rgb(209, 220, 232);
     display: flex;
     width: 85%;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 25px;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
     flex-wrap: wrap;
 }
 
 .Categoria {
+    flex: 1;
+    min-width: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 12px;
-    gap: 25px;
-    width:140px;
-    margin-bottom:5px;
-    flex-wrap: wrap;
-    background-color:rgb(252, 252, 252);
+    gap: 15px;
+    padding: 15px 5px;
+    background-color: rgb(252, 252, 252);
 }
+
 .Categoria img {
-    width: 60px;
-    height: 48px;
-    margin-top:20px;
+    width: 50px;
+    height: 40px;
 }
+
 .sectionn {
     display: flex;
-    align-items: flex-start; /* Alinea los bloques en la parte superior */
-    justify-content: space-between; /* Distribuye espacio para alinearse con los bordes de .categorias */
+    align-items: flex-start;
+    /* Alinea los bloques en la parte superior */
+    justify-content: space-between;
+    /* Distribuye espacio para alinearse con los bordes de .categorias */
     flex-direction: row;
-    gap:20px;
-    padding:20px 0; /* Ajusta el padding vertical manteniendo alineación */
-    width: 85%; /* Mismo ancho del 85% que tiene .categorias */
+    gap: 20px;
+    padding: 20px 0;
+    /* Ajusta el padding vertical manteniendo alineación */
+    width: 85%;
+    /* Mismo ancho del 85% que tiene .categorias */
     flex-wrap: wrap;
 }
+
 /*container*/
 
 
 /*ANUNCIO*/
-.anuncio{
-    flex: 1; /* Permite que el bloque de anuncio tome el espacio disponible */
+.anuncio {
+    flex: 1;
+    /* Permite que el bloque de anuncio tome el espacio disponible */
     min-width: 450px;
     height: 405px;
     background-color: rgb(197, 197, 197);
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Mantiene el texto a la izquierda y el video a la derecha */
+    justify-content: space-between;
+    /* Mantiene el texto a la izquierda y el video a la derecha */
     flex-direction: row;
     padding: 20px;
     gap: 15px;
 }
 
-.anuncio_texto{
+.anuncio_texto {
     display: flex;
     flex-direction: column;
     max-width: 250px;
@@ -159,80 +179,90 @@ body {
 }
 
 
-.anuncio video{
+.anuncio video {
     width: 100%;
-    max-width: 500px; 
-    height: 360px;    
-    object-fit: cover; 
+    max-width: 500px;
+    height: 360px;
+    object-fit: cover;
     border-radius: 4px;
 }
 
-.raya_azul{
+.raya_azul {
     border: 3px solid rgb(39, 94, 160);
     width: 80px;
 }
+
 /*ANUNCIO*/
 
 
 /*recomendaciones*/
-.libros_recomendaciones{
-    width:400px;
-    display:flex;
+.libros_recomendaciones {
+    width: 400px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 0 20px 0;
+    padding: 0 0 20px 0;
 }
-.recomendaciones{
-    display:flex;
+
+.recomendaciones {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: start;
-    border:1px solid gray;
-    height:125px;
+    border: 1px solid gray;
+    height: 125px;
 }
-.recomendaciones img{
-    width:100px;
-    height:130px;
-    padding:20px;
+
+.recomendaciones img {
+    width: 100px;
+    height: 130px;
+    padding: 20px;
 }
-.descripcionn{
-    color:rgb(66, 66, 66);
-    font-size:16px;
+
+.descripcionn {
+    color: rgb(66, 66, 66);
+    font-size: 16px;
 }
-.recomendacion_info{
-    display:flex;
+
+.recomendacion_info {
+    display: flex;
     flex-direction: column;
-    max-width:350px;
-    width:350px;
-    padding:25px;
+    max-width: 350px;
+    width: 350px;
+    padding: 25px;
     position: relative;
-    gap:15px;
+    gap: 15px;
 
 }
-.recomendacion_info a{
-    max-width:80px;
-}
-.desc{
-    color:rgb(66, 66, 66);
-    font-size:16px;
-}
-.pedir{
-    position:absolute;
-    top:75px;
-    left:210px;
-}
-.pedir button{
-    background-color:rgb(24, 55, 84);
-    color:white;
-    border:none;
-    border-radius:50%;
-    height:40px;
-    width:40px;
-    font-size:30px;
-    cursor:pointer;
+
+.recomendacion_info a {
+    max-width: 80px;
 }
 
-.negrita{
-    font-weight:bold;
+.desc {
+    color: rgb(66, 66, 66);
+    font-size: 16px;
 }
+
+.pedir {
+    position: absolute;
+    top: 75px;
+    left: 210px;
+}
+
+.pedir button {
+    background-color: rgb(24, 55, 84);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
 /*recomendaciones*/

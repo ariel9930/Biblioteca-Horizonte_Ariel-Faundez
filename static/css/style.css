@@ -150,7 +150,7 @@ body {
     text-align: start;
 }
 
-/* Contenedor del video centrado */
+
 .anuncio_video {
     flex: 1;
     display: flex;
@@ -158,12 +158,12 @@ body {
     align-items: center;
 }
 
-/* Video más grande */
+
 .anuncio video{
     width: 100%;
-    max-width: 500px; /* Aumentado para que se vea más grande */
-    height: 360px;    /* Aumentado proporcionalmente */
-    object-fit: cover; /* Mantiene buena proporción de aspecto */
+    max-width: 500px; 
+    height: 360px;    
+    object-fit: cover; 
     border-radius: 4px;
 }
 
